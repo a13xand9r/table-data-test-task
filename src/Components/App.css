@@ -1,0 +1,15 @@
+.app{
+  margin-top: 60px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px){
+  .app{
+    width: 95%;
+  }
+}
+
+.app__data{
+  margin-top: 25px;
+}

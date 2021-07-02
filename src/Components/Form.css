@@ -1,0 +1,48 @@
+.new{
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    position: relative;
+  }
+  .new__name, .new__type{
+    display: block;
+    outline: none;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(161, 175, 187, 0.658);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .new__color{
+    min-width: 25px;
+    height: 25px;
+    position: relative;
+    border-radius: 50%;
+  }
+  .new__color-picker{
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+  }
+  @media (max-width: 600px){
+    .new__color-picker{
+      right: 0;
+    }
+  }
+
+  .new__button{
+    margin-left: 10px;
+    outline: none;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgba(255, 255, 255, 0.87);
+    transition: 0.2s;
+  }
+  .new__button:hover{
+    background-color: black;
+  }

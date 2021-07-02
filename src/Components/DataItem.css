@@ -1,0 +1,64 @@
+.item{
+  min-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.item:hover{
+  background-color: beige;
+}
+.item__color{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  border-radius: 50%;
+}
+.item__name{
+  font-size: 15px;
+  line-height: 12px;
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.item__delete{
+  display: block;
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+  position: absolute;
+  right: 15px;
+}
+.item__delete:hover {
+  opacity: 1;
+}
+.item__delete:active:before, .item__delete:active:after {
+  background-color: #050;
+  opacity: 0.7;
+}
+.item__delete:before, .item__delete:after {
+  position: absolute;
+  right: 15px;
+  content: ' ';
+  height: 15px;
+  width: 2px;
+  background-color: rgb(51, 51, 51);
+}
+.item__delete:before {
+  transform: rotate(45deg);
+}
+.item__delete:after {
+  transform: rotate(-45deg);
+}
+.item-container{
+  position: relative;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.handlerIcon{
+  height: 25px;
+  opacity: 0.2;
+  position: absolute;
+  left: -30px;
+}
